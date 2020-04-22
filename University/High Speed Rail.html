@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+<title>表單練習</title>
+<style type="text/css">
+
+#center{
+margin:auto;
+padding:0px;
+width:1000px;
+}
+
+#two{
+border: 5px double #a52a2a;
+margin: 10px;
+padding: 10px;
+text-align: center;
+font-size:28px;
+font-family:"微軟正黑體";
+}
+
+table,th,tr,td{
+border: 1px solid #CCCCCC;
+margin: 5px;
+padding: 5px;
+}
+
+table{
+border-collapse: collapse;
+width:1000px;
+}
+
+
+.bgc1{
+background-color: #dedede;
+text-indent:50px;
+
+}
+
+#right{
+float:right;
+}
+
+.footer{
+background-color: #FF6900;
+color: #FFFFFF;
+}
+
+</style>
+</head> 
+
+<body >
+
+<div id="center">
+<div id="two">台灣高鐵網路訂票</div>
+
+<table>
+<form method="post" action="High Speed Rail2.html">
+<form>
+　　　<tr>
+　　　<td class="bgc1">起訖站</td>
+<td>
+起程站<select name="起程站">
+　　　<option value="請選擇...">請選擇...</option>
+　　　<option value="台北">台北</option>　　　<option value="板橋">板橋</option>　　　<option value="桃園">桃園</option>
+　　　<option value="新竹">新竹</option>　　　<option value="台中">台中</option>　　　<option value="嘉義">嘉義</option>
+　　　<option value="台南">台南</option>　　　<option value="左營">左營</option>
+　　　</select>
+到達站<select name="到達站">
+　　　<option value="請選擇...">請選擇...</option>
+　　　<option value="台北">台北</option>　　　<option value="板橋">板橋</option>　　　<option value="桃園">桃園</option>
+　　　<option value="新竹">新竹</option>　　　<option value="台中">台中</option>　　　<option value="嘉義">嘉義</option>
+　　　<option value="台南">台南</option>　　　<option value="左營">左營</option>
+　　　</select>
+</td>
+　　　</tr>
+
+　　　<tr>
+　　　<td class="bgc1">車廂種類</td>
+<td>
+<input type="radio" name="sex" value="標準車廂">標準車廂
+<input type="radio" name="sex" value="商務車廂">商務車廂
+</td>
+　　　</tr>
+
+　　　<tr>
+　　　<td class="bgc1">訂位方式</td>
+<td>
+<input type="radio" name="sex" value="依時間搜尋合適車次">依時間搜尋合適車次　
+<input type="radio" name="sex" value="直接輸入車次號碼">直接輸入車次號碼
+</td>
+　　　</tr>
+
+　　　<tr>
+　　　<td class="bgc1">時間</td>
+<td>
+去程<input type="date" name="datetest" >
+約<select name="幾點">出發
+　<option value="請選擇...">請選擇...</option>
+　<option value="00:00">00:00</option><option value="00:30">00:30</option>
+　<option value="06:00">06:00</option><option value="06:30">06:30</option>
+　<option value="07:00">07:00</option><option value="07:30">07:30</option>
+　<option value="08:00">08:00</option><option value="08:30">08:30</option>
+　<option value="09:00">09:00</option><option value="09:30">09:30</option>
+　<option value="10:00">10:00</option><option value="10:30">10:30</option>
+　<option value="11:00">11:00</option><option value="11:30">11:30</option>
+　<option value="12:00">12:00</option><option value="12:30">12:30</option>
+　<option value="13:00">13:00</option><option value="13:30">13:30</option>
+　<option value="14:00">14:00</option><option value="14:30">14:30</option>
+　<option value="15:00">15:00</option><option value="15:30">15:30</option>
+　<option value="16:00">16:00</option><option value="16:30">16:30</option>
+　<option value="17:00">17:00</option><option value="17:30">17:30</option>
+　<option value="18:00">18:00</option><option value="18:30">18:30</option>
+　<option value="19:00">19:00</option><option value="19:30">19:30</option>
+　<option value="20:00">20:00</option><option value="20:30">20:30</option>
+　<option value="21:00">21:00</option><option value="21:30">21:30</option>
+　<option value="22:00">22:00</option><option value="22:30">22:30</option>
+　<option value="23:00">23:00</option><option value="23:30">23:30</option>
+　</select>
+<input type="checkbox" name="vehicle" value="訂購回票">訂購回票
+</td>
+　　　</tr>
+
+　　　<tr>
+　　　<td class="bgc1">票數</td>
+<td>
+全票　<select name="全票">
+　　<option value="0">0</option>　　　<option value="1">1</option>　　　<option value="2">2</option>
+　　<option value="3">3</option>　　　<option value="4">4</option>　　　<option value="5">5</option>
+　　</select>
+孩童票(6-11歲)　<select name="孩童票">
+　　　<option value="0">0</option>　　　<option value="1">1</option>　　　<option value="2">2</option>
+　　　<option value="3">3</option>　　　<option value="4">4</option>　　　<option value="5">5</option>
+　　　</select>
+愛心票　<select name="愛心票">
+　　　<option value="0">0</option>　　　<option value="1">1</option>　　　<option value="2">2</option>
+　　　<option value="3">3</option>　　　<option value="4">4</option>　　　<option value="5">5</option>
+　　　</select>
+敬老票(65歲以上)　<select name="敬老票">
+　　　<option value="0">0</option>　　　<option value="1">1</option>　　　<option value="2">2</option>
+　　　<option value="3">3</option>　　　<option value="4">4</option>　　　<option value="5">5</option>
+　　　</select>
+</td>
+　　　</tr>
+
+　　　<tr>
+　　　<td class="bgc1">查詢早鳥優惠</td>
+<td>
+<input type="checkbox" name="vehicle" value="僅顯示尚有早鳥優惠之車次">僅顯示尚有早鳥優惠之車次
+</td>
+　　　</tr>
+
+</table>
+
+<div id="right">
+<input type="submit" class="footer" value="開始查詢" >
+<input type="reset" class="footer" value="重新輸入">
+</div>
+ 
+</form>
+</div>
+
+</body>
+</html>
