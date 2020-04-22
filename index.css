@@ -33,7 +33,8 @@ html,body{
 
 
 /* 如果使用者視窗寬度 <= 768px */
-@media screen and (max-width: 768px){
+/*@media screen and (max-width: 768px){*/
+@media (min-width: 768px) {
 	body {
 		background-color: #aaa;
 		overflow:hidden;
@@ -42,3 +43,9 @@ html,body{
 		display:none;
 	}
 }
+
+/*@media (min-width: 576px) {  }*/
+
+/*@media (min-width: 992px) {  }*/
+
+/*@media (min-width: 1200px) {  }*/
