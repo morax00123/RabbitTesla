@@ -3,37 +3,45 @@
 	font-family: 微軟正黑體;
 	text-decoration: none;
 }
-html,body{
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
+
+	html,body{
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	#top{
+		display: flex;
+		height: 10%;
+		width: 100%;
+		text-align: center;
+	}
+
+	.top_flex{
+		width: 33%;
+		flex: 4;
+	}
+
+	.top_center li{
+		display: inline-block;
+		border: 1px solid black;
+		border-radius: 5px;
+		padding: 5px 20px;
+		letter-spacing: 1px;
+		background-color: #F6F7F2;
+	}
+
+@media (max-width: 768px) {
+	body {
+		background-color: #aaa;
+		overflow:hidden;
+	}
+	#top{
+		display:none;
+	}
 }
 
-#top{
-	display: flex;
-	height: 10%;
-	width: 100%;
-	text-align: center;
-}
-
-.top_flex{
-	width: 33%;
-	flex: 4;
-}
-
-.top_center li{
-	display: inline-block;
-	border: 1px solid black;
-	border-radius: 5px;
-	padding: 5px 20px;
-	letter-spacing: 1px;
-	background-color: #F6F7F2;
-}
-
-
-/* 如果使用者視窗寬度 <= 768px */
-/*@media screen and (max-width: 768px){*/
 @media (min-width: 768px) {
 	body {
 		background-color: #aaa;
@@ -44,8 +52,20 @@ html,body{
 	}
 }
 
-/*@media (min-width: 576px) {  }*/
+/*@media (min-width: 576px) {}*/
 
-/*@media (min-width: 992px) {  }*/
+/*@media (min-width: 768px) {}*/
 
-/*@media (min-width: 1200px) {  }*/
+/*@media (min-width: 992px) {}*/
+
+/*@media (min-width: 1200px) {}*/
+
+
+
+/*@media (max-width: 1200px) {}*/
+
+/*@media (max-width: 992px) {}*/
+
+/*@media (max-width: 768px) {}*/
+
+/*@media (max-width: 480px) {}*/
