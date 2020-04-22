@@ -1,0 +1,87 @@
+*{
+	/*border:1px solid black;*/
+	font-family:微軟正黑體;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;/*自動排列*/
+	justify-content: center;/*左右中央*/
+	align-items: center;/*上下中央*/
+	background-color: #111;
+}
+.card{
+	width: 70%;
+	height: 500px;
+	/*background-color: green;*/
+	display: flex;/*自動排列*/
+	border-radius: 10px;
+	overflow: hidden;
+}
+.left{
+	width: 35%;
+	height: 500px;
+	text-align: center;
+}
+.right{
+	width: 65%;
+	height: 500px;
+	padding: 10px 20px;
+	background-color: #fff;
+}
+.slogan{
+	font-size: 16px;
+	margin-left: 15px;
+	color: #999;
+	font-weight: normal;
+}
+ul{
+	margin: 10px 0;
+	padding-left: 0;
+}
+ul li{
+	display: inline-block;
+	border: solid 1px #ccc;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: #211E19;
+	color: white
+}
+h3{
+	margin: 5px 0;
+}
+h4{
+	margin: 0;
+	color: #211E19;
+}
+p{
+	font-size: 14px;
+	margin: 10px 0;
+	line-height: 25px
+}
+
+
+/* 如果使用者視窗寬度 <= 768px */
+@media screen and (max-width: 768px){
+	html,body{
+		background-color: #aaa;
+		width: 100%;
+		height: 1300px;
+		margin: 0;
+		padding: 0;
+	}
+	.card{
+		width: 90%;
+		height: 1300px;
+		display: block;
+	}
+	.left{
+		width: 100%;
+	}
+	.right{
+		width: 90%;
+		height: 50%;
+	}
+}
